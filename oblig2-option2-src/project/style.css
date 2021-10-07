@@ -1,4 +1,19 @@
+/*
+Hanne sitt: 
+• The main font will be “Lato” and sans-serif will be defined as fallback font.
+• The default font size for the contents of the page will be 1.2rem
+• The headings (h1-h3) will use “Montserrat” type face and sans-serif as a
+fallback font.
+• H1 elements will have a size of 4rem
+• H2 elements will have a size of 2.2rem
+• The paragraph will never exceed 70ch wide and the distance the distance
+between lines of text will be set to 1.5
+
+*/
+
 body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+    font-family: sans-serif;
+    font-size: 14px;
   }
   
