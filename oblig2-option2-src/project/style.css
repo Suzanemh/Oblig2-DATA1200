@@ -20,11 +20,16 @@ body {
   /*Margrete sitt:
   <main>The main container contains the several articles of the “newsletter”.
   •It sets a box shadow where the blur-radius will be 1px.
-  •The box shadow’s color is “darkgrey”•The offset-x, offset-y and spread-radius values will be set to 0
+  •The box shadow’s color is “darkgrey”•
+  The offset-x, offset-y and spread-radius values will be set to 0
   •The background color of this element is “whitesmoke” */
 
   main {
     
+    box-shadow: darkgrey;
+    background-color: whitesmoke;
+    
+   
   }
   
 
