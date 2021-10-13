@@ -41,11 +41,8 @@ h2 {
 
   main {
 
-    box-shadow: darkgrey;
-    box-shadow: 0 0px 1px; 
-    background-color: whitesmoke;
-    
-   
+    box-shadow: 0 0px 1px 0px darkgray; 
+    background-color: whitesmoke; 
   }
   
 
