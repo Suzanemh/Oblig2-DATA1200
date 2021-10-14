@@ -183,7 +183,6 @@ header > div{
   SCREENS 600PX-960PX */
   @media (min-width: 600px) and (max-width: 960px) {
 
-<<<<<<< HEAD
 /*Suzane sin kode under
 
   SCREENS 600PX-960PX*/
@@ -192,14 +191,12 @@ header > div{
   @media (min-width: 600px) and (max-width: 960px) {
   footer{
     font-size:16px;
-=======
     /*General configurations*/
   body{
     font-size: 16px; /*default browser font size?*/
   }
 
     footer{
->>>>>>> 9444c102ba768d2d6f29f2baaee86f572d5e2557
     width: 85vw;
   }
 
