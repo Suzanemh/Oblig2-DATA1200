@@ -79,11 +79,11 @@ text will be set to 1.5
 
  #intro-container {
 
- border:?px;
- padding: ?px;
- margin: ?px;
- width: ?px;
- height: ?px;  
+ border:20px;
+ padding: 20px;
+ margin: 20px;
+ width: 100px;
+ height: 200px;  
     
 }
 
