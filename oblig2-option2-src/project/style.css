@@ -87,6 +87,9 @@ header{
   height: 55vh;
   width: 100%;
   background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
-  
+}
+
+div{
   background-color: #c5192d;
+  padding-top: 4rem;
 }
