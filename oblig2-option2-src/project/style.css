@@ -111,7 +111,7 @@ header > div{
 
     /*General configurations*/
   body{
-    font-size: 16px /*default browser font size?*/;
+    font-size: 16px; /*default browser font size?*/
   }
 
     footer{
@@ -130,7 +130,7 @@ header > div{
 
 /*<article>*/
 
-.article {
+article {
   float: left;
   width: 50%;
 }
