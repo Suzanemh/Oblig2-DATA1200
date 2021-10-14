@@ -13,6 +13,8 @@ exceed 70ch wide and the distance the distance between lines of
 text will be set to 1.5
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @media screen and (max-width: 600px){
 
   @font-face {
@@ -29,6 +31,7 @@ text will be set to 1.5
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
     font-size: 14px /*default browser font size?*/;
   }
   
@@ -66,20 +69,6 @@ text will be set to 1.5
     max-width: 70ch;
     line-height: 1.5;
   }
-  /* Karine sitt: 
- • The container will be 55vh tall
-* It sets a background image (“studentsbg.png” from assets/img folder)
-• The background image will not scroll with the page
-• The background image will be placed at the top of the screen, and it will
-be centered horizontally
-• The background image will be scaled “as large as possible to fill the
-container, stretching the image if necessary. If the proportions of the
-image differ from the element, it is cropped either vertically or
-horizontally so that no empty space remains”
-• The background colour of the div inside the header is #c5192d
-• The div inside the header will be pushed down 4rem (i.e.: it is positioned
-relative to its nearest positioned ancestor which is the header)
-*/
 }
 
 
@@ -96,31 +85,64 @@ relative to its nearest positioned ancestor which is the header)
     background-color: whitesmoke; 
   }
 
+ /*Kristine sitt:
+ This is the first article inside the main container.
+  •Look at the mock-up and decide what padding/margin you should use (Figure 1)
+  •The colour of the background is #c5192d (hint: you may need to use pseudo-elements to create this background. 
+  If so, you may need to adjust the z-index of the different elements. The z-index accepts both negative and positive values)
+  The bullet points of the list will be hidden. You must also use CSS (pseudo-elements) to add the emojis in front of the <li> content. 
+  Each emoji will have a width of 1rem and the top and its right and left margins will be set to 1rem
+  •The CSS code for the emojis is as followso\1F64Co\1F3EBo\1F4DA
 
+
+ #intro-container {
+
+ border:?px;
+ padding: ?px;
+ margin: ?px;
+ width: ?px;
+ height: ?px;  
+    
+}
+
+#intro-container:before {
+
+background-color: #c5192d;
+z-index: ???
+
+}
+
+li::marker {
+  content: 1F64Co;
+  content: 1F3EBo;
+  content: 1F4DA;
   
+}
+
+/* eller: 
+
+li:first-child::marker {
+  content: 1F64Co;
+}
+
+li:second-child::marker {
+  content: 1F3EBo;
+}
+
+li:last-child::marker {
+  content: 1F4DA;
+}
 
 
-  
- 
+  /*Suzane sin kode under
 
-
- 
-
-
-/*Suzane sin kode under
-
-  SCREENS 600PX-960PX */
+  SCREENS 600PX-960PX
   @media (min-width: 600px) and (max-width: 960px) {
-
-    /*General configurations*/
-  body{
-    font-size: 16px; /*default browser font size?*/
-  }
-
-    footer{
+  footer{
+    font-size:16px;
     width: 85vw;
   }
-
+}
 
   header{
     height:65vh;
@@ -130,18 +152,31 @@ relative to its nearest positioned ancestor which is the header)
   main{
     width: 85vw;
   }
+  }
+ */
 
-/*<article>*/
 
-article {
-  float: left;
-  width: 50%;
+ /* Karine sitt: 
+ • The container will be 55vh tall
+* It sets a background image (“studentsbg.png” from assets/img folder)
+• The background image will not scroll with the page
+• The background image will be placed at the top of the screen, and it will
+be centered horizontally
+• The background image will be scaled “as large as possible to fill the
+container, stretching the image if necessary. If the proportions of the
+image differ from the element, it is cropped either vertically or
+horizontally so that no empty space remains”
+• The background colour of the div inside the header is #c5192d
+• The div inside the header will be pushed down 4rem (i.e.: it is positioned
+relative to its nearest positioned ancestor which is the header)
+*/
+header{
+  height: 55vh;
+  width: 100%;
+  background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+header > div{
+  background-color: #c5192d;
+  padding-top: 4rem;
 }
