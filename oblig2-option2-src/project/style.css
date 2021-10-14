@@ -54,9 +54,6 @@ text will be set to 1.5
 
 
 
-
-
-
   /*Margrete sitt:
   <main>The main container contains the several articles of the “newsletter”.
   •It sets a box shadow where the blur-radius will be 1px. - Done
@@ -114,7 +111,7 @@ header{
   background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
 }
 
-div{
+header > div{
   background-color: #c5192d;
   padding-top: 4rem;
 }
