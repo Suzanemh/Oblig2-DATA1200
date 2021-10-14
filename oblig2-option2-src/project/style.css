@@ -13,11 +13,21 @@ exceed 70ch wide and the distance the distance between lines of
 text will be set to 1.5
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 @media screen and (max-width: 600px){
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
+
   body {
     margin: 0;
+    padding: 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
     font-size: 14px /*default browser font size?*/;
   }
@@ -25,6 +35,7 @@ text will be set to 1.5
   main {
     font-family: 'Lato', sans-serif; /*main font?*/
     font-size: 1.2rem /*default font size for contents?*/;
+
   }
 
   h1, h2, h3 {
@@ -47,44 +58,24 @@ text will be set to 1.5
 
 
 
-
-
-
   /*Margrete sitt:
   <main>The main container contains the several articles of the “newsletter”.
   •It sets a box shadow where the blur-radius will be 1px. - Done
   •The box shadow’s color is “darkgrey”• - Done 
   The offset-x, offset-y and spread-radius values will be set to 0 - Usikker på om jeg gjorde dette riktig(?). 
   •The background color of this element is “whitesmoke” - Done */
-
+  
   main {
-
     box-shadow: 0 0px 1px 0px darkgray; 
     background-color: whitesmoke; 
   }
+
+
   
 
 
-  /*Suzane sin kode under
-
-  SCREENS 600PX-960PX
-  @media (min-width: 600px) and (max-width: 960px) {
-  footer{
-    font-size:16px;
-    width: 85vw;
-  }
-}
-
-  header{
-    height:65vh;
-    width: 85vw;
-  }
-
-  main{
-    width: 85vw;
-  }
-  }
- */
+  
+ 
 
 
  /* Karine sitt: 
@@ -113,4 +104,44 @@ header > div{
   background-color: #c5192d;
   position: absolute;
   top: 4rem;
+}
+
+
+/*Suzane sin kode under
+
+  SCREENS 600PX-960PX */
+  @media (min-width: 600px) and (max-width: 960px) {
+
+    /*General configurations*/
+  body{
+    font-size: 16px; /*default browser font size?*/
+  }
+
+    footer{
+    width: 85vw;
+  }
+
+
+  header{
+    height:65vh;
+    width: 85vw;
+  }
+
+  main{
+    width: 85vw;
+  }
+
+/*<article>*/
+
+article {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 }
