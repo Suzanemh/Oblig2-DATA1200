@@ -102,7 +102,6 @@ header > div{
 
   
 
-<<<<<<< HEAD
  #intro-container {
 
  border:20px;
@@ -119,11 +118,27 @@ background-color: #c5192d;
 z-index: ???
 
 }
-=======
->>>>>>> b15b97c2ccc4080ebb283ef3a8065363b0608e34
 
+    li::marker {
+    content: 1F64Co;
+    content: 1F3EBo;
+    content: 1F4DA;
+    
+  }
   
- 
+  /* eller: */
+  
+  li:first-child::marker {
+    content: 1F64Co;
+  }
+  
+  li:second-child::marker {
+    content: 1F3EBo;
+  }
+  
+  li:last-child::marker {
+    content: 1F4DA;
+  }  
 
 
  
