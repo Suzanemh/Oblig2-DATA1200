@@ -83,6 +83,7 @@ header > div{
   position: absolute;
   bottom: -4rem;
   }
+
 }
 
 
@@ -104,6 +105,7 @@ header > div{
 
   
 
+<<<<<<< HEAD
  #intro-container {
 
  border:20px;
@@ -141,6 +143,8 @@ header{
   width: 100%;
   background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
 }
+=======
+>>>>>>> cbf974b81c5a87592bf14010b90b5184307f844d
 
 header > div{
   background-color: #c5192d;
