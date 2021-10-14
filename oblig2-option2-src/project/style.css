@@ -71,7 +71,11 @@ relative to its nearest positioned ancestor which is the header)
 header{
   height: 55vh;
   max-width: 100%; 
+
   background-image: url("assets/img/studentsbg.png");
+  /*background-attachment:scroll;*/
+  background-repeat: no repeat;
+  background-position: center top;
   position: relative;
 }
 
