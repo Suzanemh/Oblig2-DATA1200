@@ -105,7 +105,6 @@ header > div{
 
   
 
-<<<<<<< HEAD
  #intro-container {
 
  border:20px;
@@ -143,6 +142,29 @@ header{
   width: 100%;
   background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
 }
+<<<<<<< HEAD
+
+    li::marker {
+    content: 1F64Co;
+    content: 1F3EBo;
+    content: 1F4DA;
+    
+  }
+  
+  /* eller: */
+  
+  li:first-child::marker {
+    content: 1F64Co;
+  }
+  
+  li:second-child::marker {
+    content: 1F3EBo;
+  }
+  
+  li:last-child::marker {
+    content: 1F4DA;
+  }  
+=======
 =======
 >>>>>>> cbf974b81c5a87592bf14010b90b5184307f844d
 
@@ -153,6 +175,7 @@ header > div{
 
 =======
  
+>>>>>>> b450a60cbd448c2102ed23a1745beb014f93ba34
 
 
  
