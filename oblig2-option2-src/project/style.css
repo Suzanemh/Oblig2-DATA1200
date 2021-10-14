@@ -62,26 +62,8 @@ text will be set to 1.5
   
 
 
-  /*Suzane sin kode under
-
-  SCREENS 600PX-960PX
-  @media (min-width: 600px) and (max-width: 960px) {
-  footer{
-    font-size:16px;
-    width: 85vw;
-  }
-}
-
-  header{
-    height:65vh;
-    width: 85vw;
-  }
-
-  main{
-    width: 85vw;
-  }
-  }
- */
+  
+ 
 
 
  /* Karine sitt: 
@@ -107,4 +89,41 @@ header{
 header > div{
   background-color: #c5192d;
   padding-top: 4rem;
+}
+
+
+/*Suzane sin kode under
+
+  SCREENS 600PX-960PX */
+  @media (min-width: 600px) and (max-width: 960px) {
+
+    /*General configurations*/
+  footer{
+    font-size:16px;
+    width: 85vw;
+  }
+
+
+  header{
+    height:65vh;
+    width: 85vw;
+  }
+
+  main{
+    width: 85vw;
+  }
+
+/*<article>*/
+
+.article {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 }
