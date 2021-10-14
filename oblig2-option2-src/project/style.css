@@ -16,8 +16,15 @@ text will be set to 1.5
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @media screen and (max-width: 600px){
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
   body {
     margin: 0;
+    padding: 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
     font-size: 14px /*default browser font size?*/;
   }
