@@ -112,7 +112,6 @@ header > div{
     
 }
 
-#intro-container:before {
 
 background-color: #c5192d;
 z-index: 0;
@@ -138,6 +137,14 @@ z-index: 0;
   SCREENS 600PX-960PX */
   @media (min-width: 600px) and (max-width: 960px) {
 
+/*Suzane sin kode under
+
+  SCREENS 600PX-960PX*/
+
+  /*General configuration*/
+  @media (min-width: 600px) and (max-width: 960px) {
+  footer{
+    font-size:16px;
     /*General configurations*/
   }
   body{
@@ -158,19 +165,24 @@ z-index: 0;
     width: 85vw;
   }
 
-/*<article>*/
 
-article {
-  float: left;
-  width: 50%;
-}
+  /*<article>*/
+  article {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  article {
+    column-gap: 10%;
+    column-width: 45%;
+  }
 
 /* Screens >960 px */
 @media screen and (max-width: 900px){
