@@ -71,11 +71,10 @@ text will be set to 1.5
   }
 
 
-  
 
 
-  
- 
+
+
 
 
  /* Karine sitt: 
@@ -144,4 +143,26 @@ article {
   display: table;
   clear: both;
 }
+
+/* Screens > 960 px */
+@media screen and (max-width: 900px){ 
+
+  body {
+    font-size: 24px;
+  }
+
+  header {
+    height: 65vh;
+    width: 85vw;
+  }
+
+  main {
+    width: 70px;
+  }
+
+  footer{
+    width: 70px;
+
+  }
+
 }
