@@ -228,8 +228,8 @@ header > div{
   }
 
   article {
-    column-gap: 10px;
-    column-width: 45 px;
+    column-gap: 10%;
+    column-width: 45%;
   }
 
 /* Screens >960 px */
