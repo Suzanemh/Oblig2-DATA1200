@@ -24,14 +24,12 @@ text will be set to 1.5
     font-family: 'Lato';
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   }
-  * {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
-  }
 
   body {
     margin: 0;
     padding: 0;
     font-size: 14px /*default browser font size?*/;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
   }
   
   main {
@@ -100,12 +98,7 @@ header > div{
     background-color: whitesmoke; 
   }
 
-<<<<<<< HEAD
-=======
 
-  
-
-<<<<<<< HEAD
  #intro-container {
 
  border:20px;
@@ -115,13 +108,6 @@ header > div{
  height: 200px;  
     
 }
-
-#intro-container:before {
->>>>>>> 9444c102ba768d2d6f29f2baaee86f572d5e2557
-
-
-  
-<<<<<<< HEAD
 
 
  /* Karine sitt: 
@@ -143,18 +129,12 @@ header{
   width: 100%;
   background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
 }
-=======
->>>>>>> cbf974b81c5a87592bf14010b90b5184307f844d
+
 
 header > div{
   background-color: #c5192d;
   padding-top: 4rem;
 }
-
-=======
- 
-
-
  
 
 
@@ -164,7 +144,6 @@ header > div{
   SCREENS 600PX-960PX */
   @media (min-width: 600px) and (max-width: 960px) {
 
-<<<<<<< HEAD
 /*Suzane sin kode under
 
   SCREENS 600PX-960PX*/
@@ -173,17 +152,12 @@ header > div{
   @media (min-width: 600px) and (max-width: 960px) {
   footer{
     font-size:16px;
-=======
+    width: 85vw;
     /*General configurations*/
+  }
   body{
     font-size: 16px; /*default browser font size?*/
   }
-
-    footer{
->>>>>>> 9444c102ba768d2d6f29f2baaee86f572d5e2557
-    width: 85vw;
-  }
-
 
   header{
     height:65vh;
@@ -194,28 +168,6 @@ header > div{
     width: 85vw;
   }
 
-<<<<<<< HEAD
-  /*<article>*/
-  article {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  article {
-    column-gap: 10px;
-    column-width: 45 px;
-  }
-
-}
- 
-=======
 /*<article>*/
 
 article {
@@ -247,6 +199,3 @@ article {
   }
 
 }
-
-}
->>>>>>> 9444c102ba768d2d6f29f2baaee86f572d5e2557
