@@ -13,13 +13,16 @@ exceed 70ch wide and the distance the distance between lines of
 text will be set to 1.5
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 @media screen and (max-width: 600px){
 
   @font-face {
     font-family: 'Monsterrat';
     src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   }
 
   body {
