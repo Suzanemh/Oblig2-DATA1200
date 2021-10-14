@@ -86,7 +86,7 @@ relative to its nearest positioned ancestor which is the header)
 header{
   height: 55vh;
   width: 100%;
-  background-image: "img/studentsbg.png";
+  background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
+  
   background-color: #c5192d;
-
 }
