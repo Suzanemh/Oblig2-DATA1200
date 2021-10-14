@@ -67,53 +67,6 @@ text will be set to 1.5
     background-color: whitesmoke; 
   }
 
- /*Kristine sitt:
- This is the first article inside the main container.
-  •Look at the mock-up and decide what padding/margin you should use (Figure 1)
-  •The colour of the background is #c5192d (hint: you may need to use pseudo-elements to create this background. 
-  If so, you may need to adjust the z-index of the different elements. The z-index accepts both negative and positive values)
-  The bullet points of the list will be hidden. You must also use CSS (pseudo-elements) to add the emojis in front of the <li> content. 
-  Each emoji will have a width of 1rem and the top and its right and left margins will be set to 1rem
-  •The CSS code for the emojis is as followso\1F64Co\1F3EBo\1F4DA
-
-
- #intro-container {
-
- border:?px;
- padding: ?px;
- margin: ?px;
- width: ?px;
- height: ?px;  
-    
-}
-
-#intro-container:before {
-
-background-color: #c5192d;
-z-index: ???
-
-}
-
-li::marker {
-  content: 1F64Co;
-  content: 1F3EBo;
-  content: 1F4DA;
-  
-}
-
-/* eller: 
-
-li:first-child::marker {
-  content: 1F64Co;
-}
-
-li:second-child::marker {
-  content: 1F3EBo;
-}
-
-li:last-child::marker {
-  content: 1F4DA;
-}
 
 
   
