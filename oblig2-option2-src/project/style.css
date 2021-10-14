@@ -96,13 +96,16 @@ relative to its nearest positioned ancestor which is the header)
 */
 header{
   height: 55vh;
-  width: 100%;
-  background-image: url("oblig2-options2-src/project/assets/img/studentsbg.png");
+  max-width: 100%; 
+  background-image: url("assets/img/studentsbg.png");
+  position: relative;
 }
+
 
 header > div{
   background-color: #c5192d;
-  padding-top: 4rem;
+  position: absolute;
+  top: 4rem;
 }
 
 
