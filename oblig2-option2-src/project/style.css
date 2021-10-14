@@ -131,10 +131,32 @@ header{
 }
 
 
+    li::marker {
+    content: 1F64Co;
+    content: 1F3EBo;
+    content: 1F4DA;
+    
+  }
+  
+  /* eller: */
+  
+  li:first-child::marker {
+    content: 1F64Co;
+  }
+  
+  li:second-child::marker {
+    content: 1F3EBo;
+  }
+  
+  li:last-child::marker {
+    content: 1F4DA;
+  }  
+
 header > div{
   background-color: #c5192d;
   padding-top: 4rem;
 }
+
  
 
 
