@@ -182,7 +182,7 @@ header > div{
 
   article {
     column-gap: 10px;
-    column-gap: 45;
+    column-width: 45 px;
   }
 
 }
