@@ -102,6 +102,25 @@ header > div{
 
   
 
+<<<<<<< HEAD
+ #intro-container {
+
+ border:20px;
+ padding: 20px;
+ margin: 20px;
+ width: 100px;
+ height: 200px;  
+    
+}
+
+#intro-container:before {
+
+background-color: #c5192d;
+z-index: ???
+
+}
+=======
+>>>>>>> b15b97c2ccc4080ebb283ef3a8065363b0608e34
 
   
  
