@@ -168,20 +168,16 @@ z-index: 0;
 
   /*<article>*/
   article {
-    float: left;
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    row-gap: 10%;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  article {
-    column-gap: 10%;
-    column-width: 45%;
+  article div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
   }
 
 /* Screens >960 px */
