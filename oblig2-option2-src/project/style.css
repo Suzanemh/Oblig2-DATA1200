@@ -179,6 +179,7 @@ z-index: 0;
     flex-direction: column;
     width: 45%;
   }
+}
 
 /* Screens >960 px */
 @media screen and (max-width: 900px){
