@@ -159,7 +159,7 @@ header > div{
 }
 
 /* Screens >960 px */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 960px){
 
   body {
     font-size: 24px;
