@@ -193,6 +193,7 @@ z-index:
     column-gap: 10%;
     column-width: 45%;
   }
+}
 
 /* Screens >960 px */
 @media screen and (max-width: 900px){
