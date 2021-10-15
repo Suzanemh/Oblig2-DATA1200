@@ -1,17 +1,4 @@
-/*
-Hanne sitt: 
-•The whole page sets linear gradient with the following values 
-“(135deg, #f5f7fa 0%, #c3cfe2 100%)” 
-•The main font will be “Lato” and sans-serif will be defined 
-as fallback font.
-•The default browser font size must be set to 14px 
-•The default font size for thecontents of the page will be 1.2rem 
-•The headings (h1-h3) will use “Montserrat” type face and sans-serif 
-as a fallback font.•H1 elements will have a size of 4rem
-•H2 elements will have a size of 2.2rem•The paragraph will never 
-exceed 70ch wide and the distance the distance between lines of 
-text will be set to 1.5
-*/
+/*screen 600*/
 
 @media screen and (max-width: 600px){
 
@@ -85,7 +72,7 @@ header > div{
   position: absolute;
   bottom: -4rem;
   }
-}
+
 
 
 
@@ -113,10 +100,7 @@ header > div{
 }
 
 
-background-color: #c5192d;
-z-index: 0;
 
-}
 
   
   li:first-child::marker {
@@ -131,16 +115,9 @@ z-index: 0;
     content: 1F4DA;
   }  
 
+}
 
-/*Suzane sin kode under
-
-  SCREENS 600PX-960PX */
-  @media (min-width: 600px) and (max-width: 960px) {
-
-/*Suzane sin kode under
-
-  SCREENS 600PX-960PX*/
-
+/*600-960px*/
   /*General configuration*/
   @media (min-width: 600px) and (max-width: 960px) {
   footer{
