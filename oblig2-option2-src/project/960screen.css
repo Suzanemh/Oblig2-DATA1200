@@ -57,7 +57,7 @@
       max-width: 95vw; 
       margin:0;
     
-      
+     
       color:white;
       background-repeat: no-repeat;
       background-attachment: relative;
@@ -97,7 +97,7 @@
   
       padding-top: 1rem;
       padding-bottom: 1rem;  
-      background-color: #c5192d;
+      background-color: white;
       list-style-type: none;
       box-sizing: border-box;
     }
