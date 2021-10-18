@@ -1,5 +1,5 @@
 /* Screens >960 px */
-@media screen and (max-width: 960px){
+@media screen and (min-width: 960px){
 
     @font-face {
         font-family: 'Monsterrat';
@@ -16,6 +16,8 @@
         padding: 0;
         font-size: 24px /*default browser font size?*/;
         background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+
+        
       }
       
       main {
@@ -44,6 +46,9 @@
       /*Karine sitt*/ 
     
     header{
+
+
+
     background-image: url("assets/img/studentsbg.png");
       min-height: 65vh;
       max-width: 95vw; 
@@ -65,8 +70,11 @@
     header > div{
         
       background-color: #c5192d;
-      position: absolute;
+      position: relative;
       bottom: -4rem;
+
+      
+     
       }
     
     
