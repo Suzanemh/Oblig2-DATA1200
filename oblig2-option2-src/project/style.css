@@ -162,6 +162,12 @@ header > div{
     column-count:2;
     
   }
+
+  header > div{
+    background-color: #c5192d;
+    position: absolute;
+    bottom: 4rem;
+    }
 }
 
 /* Screens >960 px */
@@ -185,5 +191,11 @@ header > div{
   main{
     width: 70%;
   }
+
+  header > div{
+    background-color: #c5192d;
+    position: absolute;
+    bottom: 4rem;
+    }
 
 }
