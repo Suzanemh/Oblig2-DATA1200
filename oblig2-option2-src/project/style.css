@@ -55,7 +55,7 @@ header{
   max-width: 100%; 
 
   background-image: url("assets/img/studentsbg.png");
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -103,7 +103,7 @@ header > div{
     
   }
   
-  li:second-child::marker {
+  second-child::marker {
     content: \1F3EB;
     width: 1rem;
     margin-top: 1rem;
@@ -112,7 +112,7 @@ header > div{
     
   }
   
-  li:last-child::marker {
+  last-child::marker {
     content: \1F4DA;
     width: 1rem;
     margin-top: 1rem;
@@ -168,6 +168,7 @@ header > div{
     column-count:2;
     
   }
+
 }
 
 /* Screens >960 px */
@@ -191,5 +192,7 @@ header > div{
   main{
     width: 70%;
   }
+
+
 
 }
