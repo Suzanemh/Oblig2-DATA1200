@@ -48,11 +48,11 @@
     min-height: 55vh;
     max-width: 95vw; 
     margin:0;
-  text-align:center;
+  
     background-image: url("assets/img/studentsbg.png");
     color:white;
     background-repeat: no-repeat;
-    background-attachment: absolute;
+    background-attachment: relative;
     background-position: center;
     background-size: cover;
    
