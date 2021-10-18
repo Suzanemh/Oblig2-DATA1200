@@ -19,6 +19,7 @@
       padding: 0;
       font-size: 16px /*default browser font size?*/;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+    
 
       
     }
@@ -56,7 +57,7 @@
   text-align:center;
     background-image: url("assets/img/studentsbg.png");
     color:white;
-    position: sticky;
+    
     
     background-repeat: no-repeat;
     background-attachment: relative;
