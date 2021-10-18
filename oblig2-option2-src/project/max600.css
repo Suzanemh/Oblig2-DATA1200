@@ -90,7 +90,7 @@
       
   }
   
-    li:first-child::before {
+    li::before {
       content: "\1F64C";
       width: 1rem;
       margin-top: 1rem;
