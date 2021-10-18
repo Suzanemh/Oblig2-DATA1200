@@ -150,17 +150,16 @@ header > div{
     flex-direction: row;
     width: 100%;
     column-width: 45%;
-    column-gap: 10%
-    column-count: 2;
+    column-gap: 10%;
+    column-count:2;
   }
   
   article div {
     display: flex;
     flex-direction: column;
-    
     column-width: 45%;
-    column-gap: 10%
-    column-count: 2;
+    column-gap: 10%;
+    column-count:2;
     
   }
 }
