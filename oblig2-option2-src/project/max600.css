@@ -79,20 +79,17 @@
   
   /*Kristine*/
   
-  #intro-container {
+  #intro-container ul{
   
-   border:20px;
-   padding: 20px;
-   margin: 20px;
-   width: 100px;
-   height: 200px;  
-   background-color: #c5192d;
-   list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;  
+    background-color: #c5192d;
+    list-style-type: none;
       
   }
   
-    li:first-child::marker {
-      content: \1F64C;
+    li:first-child::before {
+      content: "\1F64C";
       width: 1rem;
       margin-top: 1rem;
       margin-right: 1rem;
@@ -100,8 +97,8 @@
       
     }
     
-    second-child::marker {
-      content: \1F3EB;
+    li:nth-child(1)::before {
+      content: "\1F3EB";
       width: 1rem;
       margin-top: 1rem;
       margin-right: 1rem;
@@ -109,8 +106,8 @@
       
     }
     
-    last-child::marker {
-      content: \1F4DA;
+    li:nth-child(2)::before {
+      content: "\1F4DA";
       width: 1rem;
       margin-top: 1rem;
       margin-right: 1rem;
