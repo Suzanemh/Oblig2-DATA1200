@@ -65,8 +65,16 @@
   
   header > div{
     background-color: #c5192d;
-    position: absolute;
-    bottom: -4rem;
+   /* position: absolute;
+    bottom: -4rem;*/
+
+   
+    margin:0 auto;
+    top:100px;
+    order:2;
+    width: 90%;
+    text-align: center;
+    bottom:-4rem;
     }
   
   

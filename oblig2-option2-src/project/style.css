@@ -73,13 +73,21 @@
   
   header > div{
     background-color: #c5192d;
-    /*position: absolute;*/
+    margin:0 auto;
+    top:100px;
+    width: 90%;
+    text-align: center;
+    order:2;
+    bottom:-4rem;
+
+
+    /*position: absolute;
     bottom: -4rem;
   width: 100vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
-  margin-right: -50vw;
+  margin-right: -50vw;*/
 
   
     
