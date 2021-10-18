@@ -37,7 +37,7 @@
       }
     
       p {
-        max-width: 70ch;
+        max-width: 70vh;
         line-height: 1.5;
       }
      
@@ -81,17 +81,20 @@
     
     /*Kristine*/
     
-    #intro-container ul{
-  
-     padding-top: 1rem;
-     padding-bottom: 1rem;
+    #intro-container {
+    
+     border:20px;
+     padding: 20px;
+     margin: 20px;
+     width: 100px;
+     height: 200px;  
      background-color: #c5192d;
      list-style-type: none;
         
     }
     
-      li::before{
-        content: "\1F64C";
+      li:first-child::marker {
+        content: \1F64C;
         width: 1rem;
         margin-top: 1rem;
         margin-right: 1rem;
@@ -99,8 +102,8 @@
         
       }
       
-      li:nth-child(1):before {
-        content: "\1F3EB";
+      second-child::marker {
+        content: \1F3EB;
         width: 1rem;
         margin-top: 1rem;
         margin-right: 1rem;
@@ -108,8 +111,8 @@
         
       }
       
-      li:nth-child(2):before {
-        content: "\1F4DA";
+      last-child::marker {
+        content: \1F4DA;
         width: 1rem;
         margin-top: 1rem;
         margin-right: 1rem;
