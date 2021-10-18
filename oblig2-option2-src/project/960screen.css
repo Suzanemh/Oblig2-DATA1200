@@ -95,9 +95,10 @@
       padding-bottom: 1rem;  
       background-color: #c5192d;
       list-style-type: none;
+      box-sizing: border-box;
     }
     
-      li:first-child::marker {
+      li::before {
         content: "\1F64C";
         width: 1rem;
         margin-top: 1rem;
