@@ -55,6 +55,8 @@
     background-attachment: relative;
     background-position: center;
     background-size: cover;
+    
+    
    
     top:0;
     z-index:100;
@@ -157,5 +159,4 @@
       main{
         width: 70%;
       }
-  
   }
