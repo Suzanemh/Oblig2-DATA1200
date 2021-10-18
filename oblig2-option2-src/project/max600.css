@@ -16,7 +16,8 @@
       margin: 0;
       padding: 0;
       font-size: 14px /*default browser font size?*/;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+      background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+      overflow-x: hidden;
     }
     
     main {
@@ -85,6 +86,7 @@
     padding-bottom: 1rem;  
     background-color: #c5192d;
     list-style-type: none;
+    box-sizing: border-box;
       
   }
   
