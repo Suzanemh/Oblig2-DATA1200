@@ -44,7 +44,7 @@
       /*Karine sitt*/ 
     
     header{
-        background-image: url("assets/img/studentsbg.png");
+    background-image: url("assets/img/studentsbg.png");
       min-height: 65vh;
       max-width: 95vw; 
       margin:0;
@@ -63,6 +63,7 @@
     
     
     header > div{
+        
       background-color: #c5192d;
       position: absolute;
       bottom: -4rem;
