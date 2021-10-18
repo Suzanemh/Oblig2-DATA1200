@@ -41,29 +41,20 @@
     max-width: 70ch;
     line-height: 1.5;
   }
-  /* Karine sitt: 
- • The container will be 55vh tall
-* It sets a background image (“studentsbg.png” from assets/img folder)
-• The background image will not scroll with the page
-• The background image will be placed at the top of the screen, and it will
-be centered horizontally
-• The background image will be scaled “as large as possible to fill the
-container, stretching the image if necessary. If the proportions of the
-image differ from the element, it is cropped either vertically or
-horizontally so that no empty space remains”
-• The background colour of the div inside the header is #c5192d
-• The div inside the header will be pushed down 4rem (i.e.: it is positioned
-relative to its nearest positioned ancestor which is the header)
-*/
+ 
+  /*Karine sitt*/ 
+
 header{
-  height: 55vh;
+  min-height: 55vh;
   max-width: 100%; 
 
   background-image: url("assets/img/studentsbg.png");
-  /*background-attachment:scroll;*/
   background-repeat: no repeat;
-  background-position: center top;
-  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position:  relative;
+  
 }
 
 
@@ -76,18 +67,14 @@ header > div{
 
 
 
-  /*Margrete sitt:
-  <main>The main container contains the several articles of the “newsletter”.
-  •It sets a box shadow where the blur-radius will be 1px. - Done
-  •The box shadow’s color is “darkgrey”• - Done 
-  The offset-x, offset-y and spread-radius values will be set to 0 - Usikker på om jeg gjorde dette riktig(?). 
-  •The background color of this element is “whitesmoke” - Done */
+  /*Margrete sitt: */
   
   main {
     box-shadow: 0 0px 1px 0px darkgray; 
     background-color: whitesmoke; 
   }
 
+/*Kristine*/
 
 #intro-container {
 
@@ -96,23 +83,36 @@ header > div{
  margin: 20px;
  width: 100px;
  height: 200px;  
+ background-color: #c5192d;
+ list-style-type: none;
     
 }
 
-
-
-
-  
   li:first-child::marker {
-    content: 1F64Co;
+    content: \1F64C;
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
   }
   
   li:second-child::marker {
-    content: 1F3EBo;
+    content: \1F3EB;
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
   }
   
   li:last-child::marker {
-    content: 1F4DA;
+    content: \1F4DA;
+    width: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
   }  
 
 }
@@ -149,13 +149,19 @@ header > div{
     display: flex;
     flex-direction: row;
     width: 100%;
-    row-gap: 10%;
+    column-width: 45%;
+    column-gap: 10%
+    column-count: 2;
   }
   
   article div {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    
+    column-width: 45%;
+    column-gap: 10%
+    column-count: 2;
+    
   }
 }
 
@@ -164,15 +170,21 @@ header > div{
 
   body {
     font-size: 24px;
+    width: 70%;
   }
 
   footer {
-    width: 70px;
+    width: 70%;
   }
+
 
   header {
     height: 65vh;
-    width: 85vw;
+    
+  }
+
+  main{
+    width: 70%;
   }
 
 }
