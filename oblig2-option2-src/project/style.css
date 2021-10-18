@@ -44,6 +44,7 @@
     p {
       max-width: 70vh;
       line-height: 1.5;
+      
     }
    
     /*Karine sitt*/ 
@@ -55,13 +56,15 @@
   text-align:center;
     background-image: url("assets/img/studentsbg.png");
     color:white;
+    position: sticky;
+    
     background-repeat: no-repeat;
     background-attachment: relative;
     background-position: center;
     background-size: cover;
     top:0;
     z-index:100;
-    position: relative;
+
     
   }
   
@@ -70,10 +73,7 @@
     background-color: #c5192d;
     /*position: absolute;*/
     bottom: -4rem;
-
-
   width: 100vw;
-  
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -98,9 +98,10 @@
   
    padding-top: 1rem;
    padding-bottom: 1rem;  
-   background-color: #c5192d;
+   background-color:white;
    list-style-type: none;
    box-sizing: border-box;
+  
       
   }
   
@@ -110,6 +111,7 @@
       margin-top: 1rem;
       margin-right: 1rem;
       margin-left: 1rem;
+
       
     }
     
@@ -119,6 +121,7 @@
       margin-top: 1rem;
       margin-right: 1rem;
       margin-left: 1rem;
+      
       
     }
     
@@ -163,6 +166,8 @@
     column-width: 45%;
     column-gap: 10%;
     column-count:2;
+    
+  
   }
   
   article div {
@@ -171,6 +176,7 @@
     column-width: 45%;
     column-gap: 10%;
     column-count:2;
+    
     
   }
 

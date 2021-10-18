@@ -58,6 +58,7 @@
     background-size: cover;
     top:0;
     z-index:100;
+    position: sticky;
     
   }
   
@@ -84,7 +85,7 @@
   
     padding-top: 1rem;
     padding-bottom: 1rem;  
-    background-color: #c5192d;
+    background-color: white;
     list-style-type: none;
     box-sizing: border-box;
       
