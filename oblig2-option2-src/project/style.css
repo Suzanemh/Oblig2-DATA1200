@@ -1,202 +1,476 @@
+@media screen and (max-width: 600px){
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
 
 
-/*600-960px*/
-  /*General configuration*/
-  @media (min-width: 600px) and (max-width: 960px) {
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
 
-    @font-face {
-      font-family: 'Monsterrat';
-      src: url(../project/assets/fonts/Montserrat-Bold.ttf);
-    }
-  
-    @font-face {
-      font-family: 'Lato';
-      src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-    }
-  
-    body {
-      margin: 0;
-      padding: 0;
-      font-size: 16px /*default browser font size?*/;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
-    
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-      
-    }
-    
-    main {
-      font-family: 'Lato', sans-serif; /*main font?*/
-      font-size: 1.2rem /*default font size for contents?*/;
+  main {
+    box-shadow: 0 0px 1px 0px darkgray; 
+    background-color: whitesmoke; 
+    margin: 70px 2% 20px; 
+    font-size: 1.2rem;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Monsterrat', sans-serif;
+  }
   
-    }
-  
-    h1, h2, h3 {
-      font-family: 'Monsterrat'/*import?*/, sans-serif;
-    }
-    
-    h1{
-      font-size: 4rem;
-    }
-  
-    h2 {
-      font-size: 2.2rem;
-    }
-  
-    p {
-      max-width: 70vh;
-      line-height: 1.5;
-      
-    }
-   
-    /*Karine sitt*/ 
+  h1{
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
   
   header{
-    min-height: 65vh;
-    /*max-width: 95vw; */
-    margin:0;
-  text-align:center;
-    background-image: url("assets/img/studentsbg.png");
-    color:white;
-    
-    
+    height: 55vh;
+    background-image: url(assets/img/studentsbg.png);
     background-repeat: no-repeat;
-    background-attachment: relative;
-    background-position: center;
+    background-position: center top;
+    background-attachment: fixed;
     background-size: cover;
-    top:0;
-    z-index:100;
-  
-
-    
+    position: relative;
   }
-  
-  
+
+
   header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 2% 2%;
+   padding: 4%;
+   }
+
+  article {
+    margin: 1rem;
+    padding: 2px;
+  }
+
+  #intro-container {
     background-color: #c5192d;
-    margin:0 auto;
-    top:100px;
-    width: 90%;
+    margin: 0;
+    border: 4rem;
+    padding: 3rem;
+  }
+
+  #intro-container > div {
+    padding: 4px;
+  }
+
+
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
+  article > img{
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
+  }
+
+  footer {
+    background-color: #c5192d;
     text-align: center;
-    order:2;
-    bottom:-4rem;
-
-
-    /*position: absolute;
-    bottom: -4rem;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;*/
-
-  
-    
-
-    }
-  
-  
-  
-  
-    /*Margrete sitt: */
-    
-    main {
-      box-shadow: 0 0px 1px 0px darkgray; 
-      background-color: whitesmoke; 
-      
-      
-    }
-  
-  /*Kristine*/
-  
-  #intro-container ul{
-  
-   padding-top: 1rem;
-   padding-bottom: 1rem; 
-   background-color:white;
-   list-style-type: none;
-   box-sizing: border-box;
-   
-   
-   
-  
-      
-  }
-  
-    li::before {
-      content: "\1F64C";
-      width: 1rem;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
-
-      
-    }
-    
-    li:nth-child(1)::before {
-      content: "\1F3EB";
-      width: 1rem;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
-      
-      
-    }
-    
-    li:nth-child(2)::before {
-      content: "\1F4DA";
-      width: 1rem;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
-      
-      
-    }  
-   
-  footer{
-    font-size:16px;
-    max-width: 85%;
-   
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 95vw;
+    max-width: 95vw;
     
   }
-  body{
-    font-size: 16px; 
+
+  a {
+    color: whitesmoke;
   }
 
-    footer{
+}
+
+  
+  /* TABLETS: SCREENS 600PX-960PX */
+
+@media (min-width: 600px) and (max-width: 960px) {
+
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
+
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    box-shadow: 0 0px 1px 0px darkgray; 
+    box-shadow: 0 0px 1px 0px darkgray; 
+    margin: 10% t.5% 0 7.5%; 
+    font-size: 1.2rem;
+  }
+
+
+  h1, h2, h3 {
+    font-family: 'Monsterrat', sans-serif;
+  }
+  
+  h1{
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  
+  
+  header{
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/img/studentsbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 0 7.5% 0 7.5%;
+   padding: 4%;
+   }
+
+
+   #intro-container{
+     display: inline-block;
+     margin-top: 90px;
+   }
+
+
+  article:first-of-type{
+    margin: 0 0 0 0;
+    padding: 25px;
+    background: linear-gradient(to right, #c5192d 50%, whitesmoke 0%);
+    background-color: #c5192d;
+    background-repeat: no-repeat;        
+  }
+
+  article:first-of-type > div:first-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  article:first-of-type > div:last-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
+  article {
+    margin: 0;
+    border-style: solid;
+    border-color: #c3cfe2;
+    padding: 2px;
+    background: whitesmoke;
+  }
+
+  article > img{
+    width: 45%;
+    padding: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  article > div {
+    display: inline-block;
+    width: 45%;
+    padding: 1.5%;
+   
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
+  }
+
+
+  footer {
+    background-color: #c5192d;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 85vw;
+    max-width: 85vw;
+    
+  }
+
+  a {
+    color: whitesmoke;
+  }
+
+}
+
+/* Computer screens >960 px */
+@media screen and (min-width: 960px){
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
+
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin: 60px 4% 25px;
     width: 85vw;
+    font-size: 1.2rem;
   }
 
+ 
+  h1, h2, h3 {
+    font-family: 'Monsterrat', sans-serif;
+  }
+  
+  h1{
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  
+  
 
   header{
-    height:65vh;
-    width: 85vw;
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/img/studentsbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
   }
 
-  main{
-    width: 85vw;
+
+  header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 1rem;
+   padding: 2rem;
+   }
+
+   #intro-container{
+    display: inline-block;
+    margin-top: 90px;
   }
 
+   article:first-of-type{
+    margin: 2rem 4rem;
+    padding: 25px;
+    background: linear-gradient(to right, #c5192d 50%, whitesmoke 0%);
+    background-color: #c5192d;
+    background-repeat: no-repeat;        
+  }
 
-  /*<article>*/
+  article:first-of-type > div:first-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+
+   
+  article:first-of-type > div:last-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
   article {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    column-width: 45%;
-    column-gap: 10%;
-    column-count:2;
-    
-  
+    margin: 0;
+    border-style: solid;
+    border-color: #c3cfe2;
+    padding: 2px;
+    background: whitesmoke;
   }
-  
-  article div {
-    display: flex;
-    flex-direction: column;
-    column-width: 45%;
-    column-gap: 10%;
-    column-count:2;
+
+  article > img{
+    width: 45%;
+    padding: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  article > div {
+    display: inline-block;
+    width: 45%;
+    padding: 1.5%;
+   
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
+  }
+
+
+  footer {
+    background-color: #c5192d;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 85vw;
+    max-width: 85vw;
     
-    
+  }
+
+  a {
+    color: whitesmoke;
   }
 
 }
