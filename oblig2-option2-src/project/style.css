@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 600px){
 
   @font-face {
@@ -49,8 +48,7 @@
     max-width: 70ch;
     line-height: 1.5;
   }
-
-
+  
   header{
     height: 55vh;
     background-image: url(assets/img/studentsbg.png);
@@ -72,13 +70,10 @@
    padding: 4%;
    }
 
-
-
   article {
     margin: 1rem;
     padding: 2px;
   }
-
 
   #intro-container {
     background-color: #c5192d;
@@ -138,9 +133,6 @@
   }
 
 }
-
-
-
 
   
   /* TABLETS: SCREENS 600PX-960PX */
@@ -410,15 +402,14 @@
     display: inline-block;
     padding: 1%;
     vertical-align: top;
-  }
 
+   
   article:first-of-type > div:last-of-type{
     width: 45%;
     display: inline-block;
     padding: 1%;
     vertical-align: top;
   }
-
 
   li {
     list-style: none;
@@ -483,4 +474,5 @@
   }
 
 }
+
 

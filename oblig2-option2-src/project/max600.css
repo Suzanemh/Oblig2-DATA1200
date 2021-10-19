@@ -1,0 +1,167 @@
+/*screen 600*/
+
+@media screen and (max-width: 600px){
+
+    @font-face {
+      font-family: 'Monsterrat';
+      src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+    }
+  
+    @font-face {
+      font-family: 'Lato';
+      src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 14px /*default browser font size?*/;
+      background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+      overflow-x: hidden;
+    }
+    
+    main {
+      font-family: 'Lato', sans-serif; /*main font?*/
+      font-size: 1.2rem /*default font size for contents?*/;
+  
+    }
+  
+    h1, h2, h3 {
+      font-family: 'Monsterrat'/*import?*/, sans-serif;
+    }
+    
+    h1{
+      font-size: 4rem;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    p {
+      max-width: 70vh;
+      line-height: 1.5;
+    }
+   
+    /*Karine sitt*/ 
+  
+  header{
+    min-height: 55vh;
+    max-width: 95vw; 
+    margin:0;
+  
+    background-image: url("assets/img/studentsbg.png");
+    color:white;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: center;
+    background-size: cover;
+    top:0;
+    z-index:100;
+   
+    
+  }
+  
+  
+  header > div{
+    background-color: #c5192d;
+   /* position: absolute;
+    bottom: -4rem;*/
+
+   
+    margin:0 auto;
+    top:100px;
+    order:2;
+    width: 90%;
+    text-align: center;
+    bottom:-4rem;
+    }
+  
+  
+  
+  
+    /*Margrete sitt: */
+    
+    main {
+      box-shadow: 0 0px 1px 0px darkgray; 
+      background-color: whitesmoke; 
+    }
+  
+  /*Kristine*/
+  
+  #intro-container ul{
+  
+    padding-top: 1rem;
+    padding-bottom: 1rem;  
+    background-color: white;
+    list-style-type: none;
+    box-sizing: border-box;
+      
+  }
+  
+    li::before {
+      content: "\1F64C";
+      width: 1rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      
+    }
+    
+    li:nth-child(1)::before {
+      content: "\1F3EB";
+      width: 1rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      
+    }
+    
+    li:nth-child(2)::before {
+      content: "\1F4DA";
+      width: 1rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      
+    } 
+    
+    
+    /*<article>*/
+  article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-width: 45%;
+    column-gap: 10%;
+    column-count:2;
+  }
+  
+  article div {
+    display: flex;
+    flex-direction: column;
+    column-width: 45%;
+    column-gap: 10%;
+    column-count:2;
+    
+  }
+
+    body {
+        font-size: 24px;
+        width: 70%;
+      }
+    
+      footer {
+        width: 70%;
+      }
+    
+    
+      header {
+        height: 65vh;
+        
+      }
+    
+      main{
+        width: 70%;
+      }
+  }
