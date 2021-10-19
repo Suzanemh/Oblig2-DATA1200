@@ -1,17 +1,3 @@
-/*
-Hanne sitt: 
-•The whole page sets linear gradient with the following values 
-“(135deg, #f5f7fa 0%, #c3cfe2 100%)” 
-•The main font will be “Lato” and sans-serif will be defined 
-as fallback font.
-•The default browser font size must be set to 14px 
-•The default font size for thecontents of the page will be 1.2rem 
-•The headings (h1-h3) will use “Montserrat” type face and sans-serif 
-as a fallback font.•H1 elements will have a size of 4rem
-•H2 elements will have a size of 2.2rem•The paragraph will never 
-exceed 70ch wide and the distance the distance between lines of 
-text will be set to 1.5
-*/
 
 @media screen and (max-width: 600px){
 
@@ -25,177 +11,475 @@ text will be set to 1.5
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   }
 
+
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+
   body {
     margin: 0;
     padding: 0;
-    font-size: 14px /*default browser font size?*/;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
   }
-  
-  main {
-    font-family: 'Lato', sans-serif; /*main font?*/
-    font-size: 1.2rem /*default font size for contents?*/;
 
+  main {
+    box-shadow: 0 0px 1px 0px darkgray; 
+    background-color: whitesmoke; 
+    margin: 70px 2% 20px; 
+    font-size: 1.2rem;
   }
 
   h1, h2, h3 {
-    font-family: 'Monsterrat'/*import?*/, sans-serif;
+    font-family: 'Monsterrat', sans-serif;
   }
   
   h1{
     font-size: 4rem;
+    padding: 10px;
   }
 
   h2 {
     font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   p {
     max-width: 70ch;
     line-height: 1.5;
   }
-  /* Karine sitt: 
- • The container will be 55vh tall
-* It sets a background image (“studentsbg.png” from assets/img folder)
-• The background image will not scroll with the page
-• The background image will be placed at the top of the screen, and it will
-be centered horizontally
-• The background image will be scaled “as large as possible to fill the
-container, stretching the image if necessary. If the proportions of the
-image differ from the element, it is cropped either vertically or
-horizontally so that no empty space remains”
-• The background colour of the div inside the header is #c5192d
-• The div inside the header will be pushed down 4rem (i.e.: it is positioned
-relative to its nearest positioned ancestor which is the header)
-*/
-header{
-  height: 55vh;
-  max-width: 100%; 
-
-  background-image: url("assets/img/studentsbg.png");
-  /*background-attachment:scroll;*/
-  background-repeat: no repeat;
-  background-position: center top;
-  position: relative;
-}
-
-
-header > div{
-  background-color: #c5192d;
-  position: absolute;
-  bottom: -4rem;
-  }
-}
-
-
-
-  /*Margrete sitt:
-  <main>The main container contains the several articles of the “newsletter”.
-  •It sets a box shadow where the blur-radius will be 1px. - Done
-  •The box shadow’s color is “darkgrey”• - Done 
-  The offset-x, offset-y and spread-radius values will be set to 0 - Usikker på om jeg gjorde dette riktig(?). 
-  •The background color of this element is “whitesmoke” - Done */
-  
-  main {
-    box-shadow: 0 0px 1px 0px darkgray; 
-    background-color: whitesmoke; 
-  }
-
-
-  
-
- #intro-container {
-
- border:20px;
- padding: 20px;
- margin: 20px;
- width: 100px;
- height: 200px;  
-    
-}
-
-#intro-container:before {
-
-background-color: #c5192d;
-z-index:
-}
-
-    /*
-    li::marker {
-    content: 1F64Co;
-    content: 1F3EBo;
-    content: 1F4DA;
-    
-  }
-  
-  /* eller: */
-  
-  li:first-child::marker {
-    content: 1F64Co;
-  }
-  
-  li:second-child::marker {
-    content: 1F3EBo;
-  }
-  
-  li:last-child::marker {
-    content: 1F4DA;
-  }  
-
-
-/*Suzane sin kode under
-
-  SCREENS 600PX-960PX */
-  @media (min-width: 600px) and (max-width: 960px) {
-
-    /*General configurations*/
-  }
-  body{
-    font-size: 16px; /*default browser font size?*/
-  }
-
-    footer{
-    width: 85vw;
-  }
 
 
   header{
-    height:65vh;
-    width: 85vw;
+    height: 55vh;
+    background-image: url(assets/img/studentsbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
   }
 
-  main{
-    width: 85vw;
+
+  header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 2% 2%;
+   padding: 4%;
+   }
+
+
+
+  article {
+    margin: 1rem;
+    padding: 2px;
   }
 
-/*<article>*/
 
-article {
-  float: left;
-  width: 50%;
-}
+  #intro-container {
+    background-color: #c5192d;
+    margin: 0;
+    border: 4rem;
+    padding: 3rem;
+  }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  #intro-container > div {
+    padding: 4px;
+  }
 
-/* Screens >960 px */
-@media screen and (max-width: 900px){
 
-  body {
-    font-size: 24px;
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
+  article > img{
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
   }
 
   footer {
-    width: 70px;
+    background-color: #c5192d;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 95vw;
+    max-width: 95vw;
+    
   }
 
-  header {
+  a {
+    color: whitesmoke;
+  }
+
+}
+
+
+
+
+  
+  /* TABLETS: SCREENS 600PX-960PX */
+
+@media (min-width: 600px) and (max-width: 960px) {
+
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
+
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    box-shadow: 0 0px 1px 0px darkgray; 
+    box-shadow: 0 0px 1px 0px darkgray; 
+    margin: 10% t.5% 0 7.5%; 
+    font-size: 1.2rem;
+  }
+
+
+  h1, h2, h3 {
+    font-family: 'Monsterrat', sans-serif;
+  }
+  
+  h1{
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  
+  
+  header{
     height: 65vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/img/studentsbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 0 7.5% 0 7.5%;
+   padding: 4%;
+   }
+
+
+   #intro-container{
+     display: inline-block;
+     margin-top: 90px;
+   }
+
+
+  article:first-of-type{
+    margin: 0 0 0 0;
+    padding: 25px;
+    background: linear-gradient(to right, #c5192d 50%, whitesmoke 0%);
+    background-color: #c5192d;
+    background-repeat: no-repeat;        
+  }
+
+  article:first-of-type > div:first-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  article:first-of-type > div:last-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
+  article {
+    margin: 0;
+    border-style: solid;
+    border-color: #c3cfe2;
+    padding: 2px;
+    background: whitesmoke;
+  }
+
+  article > img{
+    width: 45%;
+    padding: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  article > div {
+    display: inline-block;
+    width: 45%;
+    padding: 1.5%;
+   
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
+  }
+
+
+  footer {
+    background-color: #c5192d;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 85vw;
+    max-width: 85vw;
+    
+  }
+
+  a {
+    color: whitesmoke;
+  }
+
+}
+
+/* Computer screens >960 px */
+@media screen and (min-width: 960px){
+
+  @font-face {
+    font-family: 'Monsterrat';
+    src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  }
+
+  html {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin: 60px 4% 25px;
     width: 85vw;
+    font-size: 1.2rem;
+  }
+
+ 
+  h1, h2, h3 {
+    font-family: 'Monsterrat', sans-serif;
+  }
+  
+  h1{
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+  
+  
+
+  header{
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/img/studentsbg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  header > div{
+   background-color: #c5192d;
+   position: absolute;
+   bottom: -4rem;
+   text-align: center;
+   color: whitesmoke;
+   margin: 1rem;
+   padding: 2rem;
+   }
+
+   #intro-container{
+    display: inline-block;
+    margin-top: 90px;
+  }
+
+   article:first-of-type{
+    margin: 2rem 4rem;
+    padding: 25px;
+    background: linear-gradient(to right, #c5192d 50%, whitesmoke 0%);
+    background-color: #c5192d;
+    background-repeat: no-repeat;        
+  }
+
+  article:first-of-type > div:first-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+  article:first-of-type > div:last-of-type{
+    width: 45%;
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+  }
+
+
+  li {
+    list-style: none;
+    padding: 4px;
+  }
+
+  li:first-child::before{
+    content: "\1F64C";
+    margin: 1rem;
+  }
+  
+  li:nth-child(2):before{
+    content: "\1F3EB";
+    margin: 1rem;
+  }
+
+  li:last-child::before{
+    content: "\1F4DA";
+    margin: 1rem;
+  }
+
+  article {
+    margin: 0;
+    border-style: solid;
+    border-color: #c3cfe2;
+    padding: 2px;
+    background: whitesmoke;
+  }
+
+  article > img{
+    width: 45%;
+    padding: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  article > div {
+    display: inline-block;
+    width: 45%;
+    padding: 1.5%;
+   
+  }
+
+  article:nth-child(2){
+    border-bottom: 0.1px;
+  }
+
+
+  footer {
+    background-color: #c5192d;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 2px 10px 0px 10px;
+    min-width: 85vw;
+    max-width: 85vw;
+    
+  }
+
+  a {
+    color: whitesmoke;
   }
 
 }
